@@ -22,3 +22,17 @@ img {
 .espresso {
   background-color: #edae4a;
 }
+
+fieldset {
+  background-color: #b1dce4;
+}
+
+legend {
+  background-color: rgb(123, 166, 181);
+  color: white;
+  padding: 5px 10px;
+}
+
+input {
+  margin: 5px;
+}
