@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+#evailable-coffee {
+  background-color: #ccc2a1;
+  border: "2";
+}
+
+.espresso {
+  background-color: #edae4a;
+}
