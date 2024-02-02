@@ -43,8 +43,8 @@ img {
   background-image: linear-gradient(60deg, #eff3f5, #036fa1);
   background-size: 100%;
   -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; ∏
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 
 }
