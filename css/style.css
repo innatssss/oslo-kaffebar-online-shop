@@ -68,21 +68,17 @@ img.coffee-mashine {
   height: auto;
 }
 
-.description-header {
+article .description-header {
   text-align: center;
   font-size: 40px;
-  background-image: linear-gradient(60deg, #eff3f5, #036fa1);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-
+  color: #f2f4f3;
+  padding-bottom: 16px;
 }
 
-#gradient-text {
+article p {
   text-align: center;
   line-height: 25px;
+  padding-bottom: 16px;
 }
 
 [href="#sbscr-form"] {
@@ -90,7 +86,7 @@ img.coffee-mashine {
   text-decoration: none;
 }
 
-/* Styling all h2 headers */
+/* Styling all h2 */
 .goods-header,
 .blog-header,
 .events-header,
