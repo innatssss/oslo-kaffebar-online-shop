@@ -18,129 +18,175 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header id="page-header">
-      <h1>Oslo Kaffebar Roasters, Berlin</h1>
-      <nav>
-        <ul class="navigation">
-          <li class="navigation-item"><a href="">Oslo Kaffebar</a></li>
-          <li class="navigation-item"><a href="">Coffee good(s)</a></li>
-          <li class="navigation-item"><a href="">Blog</a></li>
-          <li class="navigation-item"><a href="">Events</a></li>
-          <li class="navigation-item"><a href="">Where to find</a></li>
+    <header>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#concept-description">Oslo Kaffebar</a></li>
+          <li><a href="#coffee-goods">Coffee good(s)</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#find-header">Where to find us</a></li>
+          <li class="search">
+            <input
+              type="search"
+              class="site-search"
+              name=""
+              placeholder="Search..."
+            />
+            <button class="search">Search</button>
+          </li>
         </ul>
       </nav>
+      <h1>Oslo Kaffebar</h1>
+      <p class="pre-header">Berlin based roastery</p>
     </header>
-    <main id="page-content">
+    <main>
       <section id="concept-description">
         <article>
-          <h2 id="main-header">Oslo Kaffebar</h2>
-          <h3>is a specialty coffee roastery</h3>
-          <img src="assets/images/1-bar-photo.jpg" alt="bar view" />
-          <p>
+          <img
+            src="./assets/images/1-bar-photo.jpg"
+            class="coffee-mashine"
+            alt="Coffee mashine view"
+          />
+          <h2 class="description-header">
+            Oslo Kaffebar is a specialty coffee roastery
+          </h2>
+          <p class="description">
             Ever since we opened in <time datetime="2012-07">July 2012</time> we
-            have been busy making sure that we turn <em>Oslo Kaffebar</em>
-          </p>
-          <p id="gradient-text">
-            into a simple, comfortable space with an emphasis on some of the
-            best home roasted espresso and filter coffees, home baked
-            cookies/cakes and vintage vinyl you can enjoy in Berlin.
-          </p>
-
-          <p>
-            Located at Eichendorffstrasse 13, near Nordbahnhof and the
-            convenient S1, on a picturesque side street opposite a gloriously
-            green park, Oslo Kaffebar provides a haven for anyone looking for an
-            extremely well prepared shot of coffee before work, after lunch or
-            any time at all. Oslo Kaffebar mixes <em>Berlin</em>’s concrete, raw
-            interiors and exteriors with a <em>Norwegian</em> wooden weekend
-            house. The mix is cool, natural and relaxed and we’re sure that
-            you’ll love spending time relaxing at Oslo Kaffebar. Read more about
-            us and our vision <a href="">here</a>.
+            have been busy making sure that we turn <em>Oslo Kaffebar</em> into
+            a simple, comfortable space with an emphasis on some of the best
+            home roasted espresso and filter coffees, home baked cookies/cakes
+            and vintage vinyl you can enjoy in Berlin. Located at
+            Eichendorffstrasse 13, near Nordbahnhof and the convenient S1, on a
+            picturesque side street opposite a gloriously green park, Oslo
+            Kaffebar provides a haven for anyone looking for an extremely well
+            prepared shot of coffee before work, after lunch or any time at all.
+            Oslo Kaffebar mixes <em>Berlin</em>’s concrete, raw interiors and
+            exteriors with a <em>Norwegian</em> wooden weekend house. The mix is
+            cool, natural and relaxed and we’re sure that you’ll love spending
+            time relaxing at Oslo Kaffebar. Follow us to know better about us
+            and our vision <a href="#sbscr-form">here</a>.
           </p>
         </article>
       </section>
       <section id="coffee-goods">
-        <h3>Coffee Good(s)</h3>
-        <table id="evailable-coffee">
-          <tbody>
-            <tr>
-              <td class="coffee-name">GUATEMALA La Nueva Montaña</td>
-              <td class="espresso">Espresso</td>
-              <td class="price">€17.49</td>
-            </tr>
-            <tr>
-              <td class="coffee-name">RWANDA Cyesha Washed</td>
-              <td class="espresso">Espresso</td>
-              <td class="price">€16.90</td>
-            </tr>
-            <tr>
-              <td class="coffee-name">BRAZIL Fernando Heringer Catucai</td>
-              <td class="espresso">Espresso</td>
-              <td class="price">€16.90</td>
-            </tr>
-          </tbody>
-        </table>
+        <h2 class="goods-header">Coffee Good(s)</h2>
+        <div class="card-coffee-list">
+          <div class="coffe-card">
+            <div class="p-image">
+              <img src="./assets/images/coffee-bag.png" alt="coffe bag pic" />
+            </div>
+            <div class="p-info">
+              <h4>Pery&Brazil</h4>
+              <p>Espresso</p>
+              <button>Buy</button>
+            </div>
+          </div>
+          <div class="coffe-card">
+            <div class="p-image">
+              <img src="./assets/images/coffee-bag.png" alt="coffe bag pic" />
+            </div>
+            <div class="p-info">
+              <h4>Ethiopia</h4>
+              <p>Filter</p>
+              <button>Buy</button>
+            </div>
+          </div>
+          <div class="coffe-card">
+            <div class="p-image">
+              <img src="./assets/images/coffee-bag.png" alt="coffe bag pic" />
+            </div>
+            <div class="p-info">
+              <h4>Peru</h4>
+              <p>Espresso</p>
+              <button>Buy</button>
+            </div>
+          </div>
+        </div>
       </section>
       <section id="blog">
-        <h2 id="blog-header">Blog</h2>
-        <article class="blog-article">
-          <h3>Struggling with choosing which coffee to buy?</h3>
-          <p>
-            When I think about coffee, the first thing that comes to my mind is
-            its aroma: The delicious smell that comes out when I’m grinding
-            coffee or brewing it. It connects me directly to my senses, bringing
-            comfort and nice feelings. That’s nothing better than starting the
-            day with a fresh cup of coffee. The Specialty Coffee experience is
-            all about flavour and what it takes to have the most stunning
-            coffees. But what makes the coffee flavour? Flavour is a combination
-            of aroma and taste. We feel it in our tongue, in our olfactory bulb,
-            and nasal cavity. On the tongue, we perceive the basic tastes -
-            acid, sweet, bitter, salty and umami (savoury). If we pay attention
-            to what we are experiencing when we drink a sip of coffee, we start
-            to notice general flavours like fruity, floral, chocolaty, nutty.
-            With experience, we refine our senses and are able to taste and
-            experience more. Just as wine, coffee tasting brings us a complex
-            flavour experience. Before we drink a delicious cup of coffee, there
-            are many factors that have an influence on its final flavour. <br />
-            <b>Wanna know more about how to choose a right coffee?</b> <br />
-            <a href="https://youtu.be/O9YnLFrM7Fs?si=Eb_mEIKCVunjbdrk">Here</a>
-            we found some interesting video for you!
-          </p>
+        <hr />
+        <h2 class="blog-header">Blog</h2>
+        <hr />
+        <article class="article-1">
+          <h3 class="title-article-1">
+            Struggling with choosing which coffee to buy?
+          </h3>
+          <div class="inline-block-article">
+            <p class="main-article-1">
+              When I think about coffee, the first thing that comes to my mind
+              is its aroma: The delicious s‚mell that comes out when I’m
+              grinding coffee or brewing it. It connects me directly to my
+              senses, bringing comfort and nice feelings. That’s nothing better
+              than starting the day with a fresh cup of coffee.
+            </p>
+            <p>
+              The Specialty Coffee experience is all about flavour and what it
+              takes to have the most stunning coffees. But what makes the coffee
+              flavour? Flavour is a combination of aroma and taste. We feel it
+              in our tongue, in our olfactory bulb, and nasal cavity. On the
+              tongue, we perceive the basic tastes - acid, sweet, bitter, salty
+              and umami (savoury). If we pay attention to what we are
+              experiencing when we drink a sip of coffee, we start to notice
+              general flavours like fruity, floral, chocolaty, nutty.
+            </p>
+            <p>
+              With experience, we refine our senses and are able to taste and
+              experience more. Just as wine, coffee tasting brings us a complex
+              flavour experience. Before we drink a delicious cup of coffee,
+              there are many factors that have an influence on its final
+              flavour.
+            </p>
+          </div>
+          <div class="article-1-question">
+            <p>Wanna know more about how to choose a right coffee?</p>
+            <p>Down here check some interesting video we found for you!</p>
+          </div>
+
           <iframe
-            width="560"
-            height="315"
+            class="video-article-1"
             src="https://www.youtube.com/embed/O9YnLFrM7Fs?si=5cez_t-hoZ0F1m6v"
             title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            ‚
             allowfullscreen
           ></iframe>
         </article>
       </section>
       <section id="events">
-        <h2>Events</h2>
-        <p>Wanna know about all upcoming events?</p>
-        <form action="/action_page.php">
-          <fieldset>
-            <legend>subscription fourm</legend>
-            <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname" /><br /><br />
-            <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname" /><br /><br />
+        <hr />
+        <h2 class="events-header">Events</h2>
+        <hr />
+        <p class="events-question">More about upcoming events</p>
+        <form action="/submit" method="post">
+          <fieldset class="sbscr-form">
+            <legend>Subscription Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="fname" name="fname" />
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" /><br /><br />
-            <label for="birthday">Birthday:</label>
-            <input type="date" id="birthday" name="birthday" /><br /><br />
-            <input type="submit" value="Submit" />
+            <input type="email" id="email" name="email" />
+            <button class="subscribe">Subscribe</button>
           </fieldset>
         </form>
       </section>
+      <section id="location">
+        <hr />
+        <h2 class="find-header">Where to find us</h2>
+        <hr />
+      </section>
     </main>
-    <footer id="page-footer">
+    <footer>
       <p>All rights reserved 2024</p>
-      <small>OSLO KAFFEBAR 2024</small>
+      <small>OSLO KAFFEBAR</small>
     </footer>
   </body>
 </html>
