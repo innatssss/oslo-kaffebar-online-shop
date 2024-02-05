@@ -5,26 +5,54 @@
 }
 
 body {
-  background-color: f2f4f3;
+  background-color: #f2f4f3;
   font-family: "Open Sans", sans-serif;
 }
 
-.navigation li {
-  display: inline-block;
-  margin: 0 10px;
+header {
+  background-image: linear-gradient(to right, #826c94 30%, #ffab44);
+  background-size: 100%;
+  background-repeat: repeat;
 }
 
-.navigation a {
-  background: #395870;
-  background: linear-gradient(#7ba6b5, #22333b);
-  border-right: 1px solid rgba(0, 0, 0, 0.3);
+/* Mainu nav styling */
+.main-nav li {
   color: #f2f4f3;
-  padding: 12px 20px;
-  text-decoration: none;
+  display: inline-block;
+  margin-top: 32px;
+  margin-left: 16px;
 }
 
-#concept-description {
-  margin-top: 30px;
+.main-nav a {
+  padding: 12px 10px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: "Archivo Black", sans-serif;
+  color: inherit;
+}
+
+/* Change the color of links on hover */
+.main-nav a:hover {
+  background-color: #f2f4f3;
+  color: #22333b;
+}
+
+input.site-search {
+  margin: 8px;
+}
+
+h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 6rem;
+  text-align: center;
+  margin-bottom: 0;
+  color: #22333b;
+}
+
+.pre-header {
+  text-align: center;
+  padding-bottom: 100px;
+  color: #22333b;
 }
 
 section {
@@ -32,66 +60,170 @@ section {
   color: #f2f4f3;
 }
 
-img {
-  width: 600px;
+img.coffee-mashine {
+  width: 100%;
   height: auto;
 }
 
-#main-header {
+.description-header {
   text-align: center;
-  font-size: 40px;
-  background-image: linear-gradient(60deg, #eff3f5, #036fa1);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-
+  font-size: 2rem;
+  margin: 10px 10px;
 }
 
-#gradient-text {
+article .description {
+  padding: 20px;
   text-align: center;
-  background-size: 100%;
-  background-image: linear-gradient(45deg, #7ba6b5, #22333b);
+  line-height: 25px;
 }
 
-#blog-header {
-  text-align: center;
-  font-size: 40px;
+[href="#sbscr-form"] {
+  color: #edae4a;
+  text-decoration: none;
 }
 
-h3 + p {
+/* Styling all h2 headers */
+.goods-header,
+.blog-header,
+.events-header,
+.find-header {
+  margin-left: 64px;
+}
+
+/* Coffe card styling */
+.coffe-card {
+  width: 30%;
+  background-color: #f2f4f3;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 10px 8px;
+}
+
+.p-image img {
+  width: 80%;
+  margin: 10%;
+  border-radius: 0;
+}
+
+.card-coffee-list h4 {
+  color: #826c94;
+  text-align: center;
+  margin-top: -10%;
+}
+
+.card-coffee-list p {
   color: #22333b;
-  background: #b1dce4;
+  margin-left: 10%;
 }
 
-[href] {
-  color: #a9927d;
+.card-coffee-list button {
+  margin: 5% 0% 5% 10%;
+  padding: 10px;
 }
 
-#evailable-coffee {
-  background-color: #5e503f;
-  border: "2";
+.card-coffee-list button:hover {
+  color: #f2f4f3;
+  background-color: #826c94;
+  padding: 15px;
 }
 
-.espresso {
-  background-color: #edae4a;
+/* Blog styling */
+.blog-header {
+  padding: 25px 0px 25px 0px;
+  text-align: left;
+  font-size: 2rem;
 }
 
-fieldset {
+hr {
+  color: #826c94;
+}
+
+.title-article-1 {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+div.inline-block-article p {
+  border: 2px dotted black;
+  display: inline-block;
+  margin: 1rem;
+  padding: 1.3rem;
+  width: 250px;
+}
+
+.article-1-question {
+  text-align: center;
+}
+
+div.article-1-question p {
+  margin-top: 16px;
+}
+
+iframe.video-article-1 {
+  width: 560px;
+  height: 315px;
+  margin: 30px;
+}
+
+.events-question {
+  padding: 32px;
+}
+
+/* Events stylin */
+
+.events-header {
+  padding: 25px 0px 25px 0px;
+  text-align: left;
+  font-size: 2rem;
+}
+
+/* Subscription form styling */
+#sbscr-form {
+  margin-top: 32px;
   background-color: #b1dce4;
 }
 
-legend {
+fieldset {
+  margin-left: 160px;
+  margin-right: 160px;
+  padding-bottom: 25px;
   background-color: #7ba6b5;
-  color: white;
+  background-image: linear-gradient(to right, #826c94 30%, #ffab44);
+  background-size: 100%;
+  background-repeat: repeat;
+}
+
+.sbscr-form input {
+  display: block;
+}
+
+.sbscr-form legend {
+  background-color: #826c94;
+  color: #f2f4f3;
   padding: 5px 10px;
 }
 
-input {
-  margin: 5px;
+.sbscr-form input {
+  width: 100%;
 }
 
+.sbscr-form button {
+  margin-top: 1rem;
+  padding: 5px;
+}
+
+/* Where to find styling */
+.find-header {
+  padding: 25px 0px 25px 0px;
+  text-align: left;
+  font-size: 2rem;
+}
+
+/* Footer styling */
 footer {
+  background-image: linear-gradient(to right, #826c94 30%, #ffab44);
+  background-size: 100%;
+  background-repeat: repeat;
   text-align: center;
+  font-size: 1rem;
 }
