@@ -1,0 +1,83 @@
+/* Color styling */
+.pre-header,
+h1,
+h2 {
+  color: #22333b;
+}
+
+/* Header styling */
+h1 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 46px;
+}
+
+.pre-header {
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+h2 {
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+/* Main blog styling */
+.article-1 {
+  color: #22333b;
+}
+.article-1 h3 {
+  margin: 20px;
+  font-size: 2rem;
+}
+
+.article-1 h4 {
+  text-align: center;
+}
+
+.container-flex-a1 {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-left p {
+  margin-inline: 32px;
+  text-align: start;
+}
+
+.container-main h5 {
+  margin-left: 20px;
+  padding: 10px 0px;
+  font-size: 1.5rem;
+}
+
+.container-main p {
+  margin-left: 20px;
+  padding: 10px 0px;
+  text-align: start;
+}
+.article-1-list li {
+  margin: 10px 40px;
+  list-style: inside;
+  line-height: 25px;
+}
+
+.article-1-question p {
+  margin-top: 8px;
+  font-weight: 600;
+  padding: 0;
+  text-align: center;
+}
+
+iframe.video-article-1 {
+  width: 560px;
+  height: 315px;
+  margin: auto;
+  display: block;
+  padding: 30px;
+}

@@ -15,6 +15,10 @@ header {
   background-repeat: repeat;
 }
 
+hr {
+  color: #826c94;
+}
+
 /* Mainu nav styling */
 .main-nav li {
   color: #f2f4f3;
@@ -60,10 +64,6 @@ section {
   color: #f2f4f3;
 }
 
-h3 {
-  text-align: center;
-}
-
 img.coffee-mashine {
   width: 100%;
   height: auto;
@@ -79,7 +79,7 @@ article .description-header {
 article p {
   text-align: center;
   line-height: 25px;
-  padding-bottom: 16px;
+  padding-bottom: 64px;
 }
 
 [href="#sbscr-form"] {
@@ -135,43 +135,45 @@ article p {
 /* Blog styling */
 .blog-header {
   padding: 25px 0px 25px 0px;
+}
+
+.blog-header {
   text-align: left;
   font-size: 2rem;
 }
 
-hr {
-  color: #826c94;
-}
-
-.title-article-1 {
-  margin-top: 2rem;
-  text-align: center;
-}
-
-div.inline-block-article p {
-  border: 2px dotted black;
-  display: inline-block;
-  margin: 1rem;
-  padding: 1.3rem;
-  width: 250px;
-}
-
-.article-1-question {
-  text-align: center;
-}
-
-div.article-1-question p {
-  margin-top: 16px;
-}
-
-iframe.video-article-1 {
-  width: 560px;
-  height: 315px;
+.article-1 h3 {
   margin: 30px;
+  text-align: center;
 }
 
-.events-question {
-  padding: 32px;
+h4 a:link {
+  background-color: #f2f4f3;
+  color: #22333b;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.container-a1-left hr {
+  margin-top: 5px;
+}
+
+.container-a1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-a1 .container-a1-left {
+  margin: 0px 64px;
+  line-height: 25px;
+}
+
+.img-article-1 {
+  width: 40%;
+  height: auto;
+  margin-inline-end: 32px;
+  margin-bottom: 16px;
 }
 
 /* Events stylin */
@@ -185,34 +187,34 @@ iframe.video-article-1 {
 /* Subscription form styling */
 #sbscr-form {
   margin-top: 32px;
-  background-color: #b1dce4;
+  background-color: #22333b;
 }
 
 fieldset {
   margin-left: 160px;
   margin-right: 160px;
   padding-bottom: 25px;
-  background-color: #7ba6b5;
+  background-color: #22333b;
   background-image: linear-gradient(to right, #826c94 30%, #ffab44);
   background-size: 100%;
   background-repeat: repeat;
 }
 
-.sbscr-form input {
+#sbscr-form input {
   display: block;
 }
 
-.sbscr-form legend {
+#sbscr-form legend {
   background-color: #826c94;
   color: #f2f4f3;
   padding: 5px 10px;
 }
 
-.sbscr-form input {
+#sbscr-form input {
   width: 100%;
 }
 
-.sbscr-form button {
+#sbscr-form button {
   margin-top: 1rem;
   padding: 5px;
 }
