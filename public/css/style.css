@@ -19,6 +19,11 @@ hr {
   color: #826c94;
 }
 
+button {
+  margin-top: 1rem;
+  padding: 5px;
+}
+
 /* Mainu nav styling */
 .main-nav li {
   color: #f2f4f3;
@@ -43,6 +48,16 @@ hr {
 
 input.site-search {
   margin: 8px;
+}
+
+/* for all inputs */
+input:focus {
+  background: #22333b;
+  color: #f2f4f3;
+}
+
+.search button:hover {
+  background-color: #ffab44;
 }
 
 h1 {
@@ -80,6 +95,7 @@ article p {
   text-align: center;
   line-height: 25px;
   padding-bottom: 64px;
+  margin: 0px 32px;
 }
 
 [href="#sbscr-form"] {
@@ -96,6 +112,7 @@ article p {
 }
 
 /* Coffe card styling */
+
 .coffe-card {
   width: 30%;
   background-color: #f2f4f3;
@@ -129,7 +146,28 @@ article p {
 .card-coffee-list button:hover {
   color: #f2f4f3;
   background-color: #826c94;
-  padding: 15px;
+  font-weight: 700;
+}
+
+.coffee-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.coffee-nav a {
+  color: #22333b;
+  background-color: #f2f4f3;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 20px;
+  margin: 20px 0px 40px;
+  border: 1px solid #22333b;
+}
+
+.coffee-nav a:hover {
+  background-color: #826c94;
+  color: #22333b;
+  border: 2px solid #edae4a;
 }
 
 /* Blog styling */
@@ -147,11 +185,20 @@ article p {
   text-align: center;
 }
 
-h4 a:link {
-  background-color: #f2f4f3;
-  color: #22333b;
+.link-a1 a:link {
   text-decoration: none;
-  padding: 5px;
+  padding: 8px;
+  line-height: 40px;
+}
+
+.link-a1 a {
+  color: #22333b;
+  background-color: #826c94;
+}
+
+.link-a1 a:hover {
+  color: #22333b;
+  background-color: #f2f4f3;
 }
 
 .container-a1-left hr {
@@ -184,6 +231,10 @@ h4 a:link {
   font-size: 2rem;
 }
 
+#events p {
+  margin-left: 32px;
+}
+
 /* Subscription form styling */
 #sbscr-form {
   margin-top: 32px;
@@ -214,9 +265,14 @@ fieldset {
   width: 100%;
 }
 
-#sbscr-form button {
-  margin-top: 1rem;
-  padding: 5px;
+button.subscribe {
+  color: #f2f4f3;
+  background-color: #826c94;
+}
+
+fieldset button:hover {
+  color: #826c94;
+  background-color: #f2f4f3;
 }
 
 /* Where to find styling */

@@ -27,6 +27,7 @@ h2 {
 
 /* Main blog styling */
 .article-1 {
+  margin: 0px 76px 0px 64px;
   color: #22333b;
 }
 .article-1 h3 {
@@ -36,6 +37,7 @@ h2 {
 
 .article-1 h4 {
   text-align: center;
+  font-size: 1.3rem;
 }
 
 .container-flex-a1 {
@@ -45,9 +47,15 @@ h2 {
   justify-content: center;
 }
 
+.container-main p {
+  text-indent: 5%;
+}
+
 .container-left p {
   margin-inline: 32px;
   text-align: start;
+  line-height: 50px;
+  font-size: 150%;
 }
 
 .container-main h5 {
@@ -60,6 +68,7 @@ h2 {
   margin-left: 20px;
   padding: 10px 0px;
   text-align: start;
+  font-size: 1.2rem;
 }
 .article-1-list li {
   margin: 10px 40px;
