@@ -5,6 +5,7 @@
 }
 
 body {
+  color: #22333b;
   background-color: #f2f4f3;
   font-family: "Open Sans", sans-serif;
 }
@@ -15,17 +16,28 @@ header {
   background-repeat: repeat;
 }
 
+header h1,
+p {
+  text-align: center;
+}
+
 hr {
   color: #826c94;
 }
 
-button {
+button.main-nav {
   margin-top: 1rem;
-  padding: 5px;
+  padding: 5x;
+}
+
+input:focus {
+  background: #22333b;
+  color: #f2f4f3;
 }
 
 /* Mainu nav styling */
-.main-nav li {
+.main-nav li,
+div {
   color: #f2f4f3;
   display: inline-block;
   margin-top: 32px;
@@ -46,31 +58,49 @@ button {
   color: #22333b;
 }
 
-input.site-search {
-  margin: 8px;
+/* Search form */
+.search form,
+button {
+  display: inline;
+  cursor: pointer;
 }
 
-/* for all inputs */
-input:focus {
-  background: #22333b;
-  color: #f2f4f3;
+.search {
+  float: right;
+  margin-right: 32px;
+  margin-top: 16px;
+}
+
+.search input,
+button {
+  height: 42px;
+  border: 1.5px solid #826c94;
+}
+
+.search input {
+  width: 200px;
+}
+
+.search button {
+  width: 48px;
+  margin-left: -5px;
+  background: #edae4a;
 }
 
 .search button:hover {
-  background-color: #ffab44;
+  background-color: #826c94;
 }
 
 h1 {
+  margin-top: 200px;
   font-family: "Archivo Black", sans-serif;
   font-size: 6rem;
-  text-align: center;
   margin-bottom: 0;
   color: #22333b;
 }
 
 .pre-header {
-  text-align: center;
-  padding-bottom: 100px;
+  padding-bottom: 180px;
   color: #22333b;
 }
 
@@ -91,7 +121,7 @@ article .description-header {
   padding-bottom: 16px;
 }
 
-article p {
+article .description {
   text-align: center;
   line-height: 25px;
   padding-bottom: 64px;
@@ -116,42 +146,72 @@ article p {
 .coffe-card {
   width: 30%;
   background-color: #f2f4f3;
-  border-radius: 10px;
+  border-radius: 30px;
   display: inline-block;
   margin: 10px 8px;
 }
 
+.coffe-card:hover {
+  box-shadow: 0px 9px 30px 0px rgba(191, 163, 215, 1);
+  transition-duration: 0.7s;
+}
+
 .p-image img {
   width: 80%;
-  margin: 10%;
+  margin: 0px 20px;
   border-radius: 0;
 }
 
-.card-coffee-list h4 {
+.card-coffee-list .p-info {
+  margin: 16px 0px 8px 40px;
+  line-height: 32px;
+}
+
+/* Coffee name and links to pages */
+.p-info a {
   color: #826c94;
-  text-align: center;
-  margin-top: -10%;
 }
 
-.card-coffee-list p {
+.p-info a:link {
+  text-decoration: none;
+}
+
+.p-info p {
   color: #22333b;
-  margin-left: 10%;
+  width: 100%;
+  text-align: start;
 }
 
-.card-coffee-list button {
-  margin: 5% 0% 5% 10%;
-  padding: 10px;
+.p-info a:hover {
+  color: #22333b;
+}
+
+.p-info button {
+  width: 180px;
+  height: 40px;
+  border: none;
+  background-color: #22333b;
+  color: #f2f4f3;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 1px 3px 0px rgb(139, 113, 255);
+  transition-duration: 0.7s;
 }
 
 .card-coffee-list button:hover {
   color: #f2f4f3;
   background-color: #826c94;
   font-weight: 700;
+  border-radius: 30px;
 }
 
 .coffee-nav {
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 
 .coffee-nav a {
@@ -161,21 +221,20 @@ article p {
   text-decoration: none;
   padding: 20px;
   margin: 20px 0px 40px;
-  border: 1px solid #22333b;
+  border: 2px solid #22333b;
+  transition-duration: 0.7s;
 }
 
 .coffee-nav a:hover {
   background-color: #826c94;
   color: #22333b;
-  border: 2px solid #edae4a;
+  box-shadow: 1px 3px 0px rgb(139, 113, 255);
+  border-radius: 30px;
 }
 
 /* Blog styling */
 .blog-header {
   padding: 25px 0px 25px 0px;
-}
-
-.blog-header {
   text-align: left;
   font-size: 2rem;
 }
@@ -189,6 +248,10 @@ article p {
   text-decoration: none;
   padding: 8px;
   line-height: 40px;
+}
+
+.link-a1 {
+  margin: 0;
 }
 
 .link-a1 a {
@@ -214,6 +277,10 @@ article p {
 .container-a1 .container-a1-left {
   margin: 0px 64px;
   line-height: 25px;
+}
+
+.container-a1-left p {
+  text-align: left;
 }
 
 .img-article-1 {
@@ -253,21 +320,25 @@ fieldset {
 
 #sbscr-form input {
   display: block;
+  width: 250px;
+  margin: 0px 16px 16px;
 }
 
 #sbscr-form legend {
-  background-color: #826c94;
-  color: #f2f4f3;
   padding: 5px 10px;
+  margin-left: 16px;
+  background-color: #826c94;
+  color: #f2f4f3;
 }
 
-#sbscr-form input {
-  width: 100%;
-}
-
-button.subscribe {
+fieldset button {
+  font-size: 1rem;
+  padding: 10px 15px;
+  margin: 0;
+  text-align: center;
   color: #f2f4f3;
   background-color: #826c94;
+  cursor: pointer;
 }
 
 fieldset button:hover {

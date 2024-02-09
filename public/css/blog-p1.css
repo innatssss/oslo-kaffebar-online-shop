@@ -1,21 +1,14 @@
-/* Color styling */
-.pre-header,
-h1,
-h2 {
+.article-1 {
   color: #22333b;
+  background-color: #f2f4f3;
 }
 
 /* Header styling */
 h1 {
-  font-family: "Archivo Black", sans-serif;
   font-size: 2rem;
-  text-align: center;
-  margin-bottom: 0;
-  margin-top: 46px;
 }
 
 .pre-header {
-  text-align: center;
   padding-bottom: 100px;
 }
 
@@ -27,17 +20,20 @@ h2 {
 
 /* Main blog styling */
 .article-1 {
-  margin: 0px 76px 0px 64px;
   color: #22333b;
+  margin: 0px 76px 0px 64px;
 }
+
 .article-1 h3 {
   margin: 20px;
   font-size: 2rem;
+  /* color: #22333b; */
 }
 
 .article-1 h4 {
   text-align: center;
   font-size: 1.3rem;
+  /* color: #22333b; */
 }
 
 .container-flex-a1 {
@@ -56,6 +52,11 @@ h2 {
   text-align: start;
   line-height: 50px;
   font-size: 150%;
+  color: #22333b;
+}
+
+.container-main {
+  color: #22333b;
 }
 
 .container-main h5 {
@@ -70,17 +71,18 @@ h2 {
   text-align: start;
   font-size: 1.2rem;
 }
+
 .article-1-list li {
   margin: 10px 40px;
   list-style: inside;
   line-height: 25px;
 }
 
-.article-1-question p {
-  margin-top: 8px;
-  font-weight: 600;
-  padding: 0;
+.article-1-question {
+  width: 100%;
   text-align: center;
+  color: #22333b;
+  font-weight: 700;
 }
 
 iframe.video-article-1 {
