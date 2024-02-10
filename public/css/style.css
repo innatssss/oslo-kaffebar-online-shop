@@ -18,6 +18,14 @@ hr {
   color: #826c94;
 }
 
+/* Styling all main buttons on hover */
+.main-button:hover {
+  color: #f2f4f3;
+  background-color: #826c94;
+  border-radius: 30px;
+  box-shadow: 1px 3px 0px rgb(139, 113, 255);
+}
+
 header {
   background-image: linear-gradient(to right, #826c94 30%, #ffab44);
   background-size: 100%;
@@ -209,16 +217,10 @@ article .description {
   font-size: large;
 }
 
-.card-coffee-list button:hover {
-  color: #f2f4f3;
-  background-color: #826c94;
-  font-weight: 700;
-  border-radius: 30px;
-}
-
 .coffee-nav {
   display: flex;
   justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -233,19 +235,71 @@ article .description {
   transition-duration: 0.7s;
 }
 
-.coffee-nav a:hover {
-  background-color: #826c94;
+/* Subscription form styling */
+
+#subscribe {
+  background-color: #f2f4f3;
+  width: 100%;
+  padding: 30px;
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+.sub-header h4 {
   color: #22333b;
-  box-shadow: 1px 3px 0px rgb(139, 113, 255);
-  border-radius: 30px;
+  font-size: 32px;
+} 
+
+.sub-header p {
+  color: #22333b;
+  padding: 15px;
+}
+
+#subscribe div {
+  display: block;
+}
+
+.form-control {
+  position: relative;
+  margin: 30px 0 20px;
+}
+
+.form-control input {
+  border: 0;
+  border-radius: 50px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  height: 42px;
+  padding: 12px 24px;
+  width: 60%;
+}
+
+.form-control button {
+  background-color: #22333b;
+  border: 0;
+  border-radius: 50px;
+  color: #f2f4f3;
+  font-size: 14px;
+  height: 42px;
+  padding: 12px 24px;
+  position: sticky;
+  top: 0;
+  right: 0;
+}
+
+.svg-cup {
+  font-size: 100px;
+  margin: 30px;
+  color: #22333b;
+}
+
+.svg-cup i:hover {
+  color: #edae4a;
+  transition-duration: 0.7s;
 }
 
 /* Blog styling */
-
-.article-1 h3 {
-  margin: 30px;
-  text-align: center;
-}
 
 .link-a1 a:link {
   text-decoration: none;
@@ -275,6 +329,7 @@ article .description {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 40px;
 }
 
 .container-a1 .container-a1-left {
@@ -291,62 +346,6 @@ article .description {
   height: auto;
   margin-inline-end: 32px;
   margin-bottom: 16px;
-}
-
-/* Events stylin */
-
-.events-header {
-  padding: 25px 0px 25px 0px;
-  text-align: left;
-  font-size: 2rem;
-}
-
-#events p {
-  margin-left: 32px;
-}
-
-/* Subscription form styling */
-#sbscr-form {
-  margin-top: 32px;
-  background-color: #22333b;
-}
-
-fieldset {
-  margin-left: 160px;
-  margin-right: 160px;
-  padding-bottom: 25px;
-  background-color: #22333b;
-  background-image: linear-gradient(to right, #826c94 30%, #ffab44);
-  background-size: 100%;
-  background-repeat: repeat;
-}
-
-#sbscr-form input {
-  display: block;
-  width: 250px;
-  margin: 0px 16px 16px;
-}
-
-#sbscr-form legend {
-  padding: 5px 10px;
-  margin-left: 16px;
-  background-color: #826c94;
-  color: #f2f4f3;
-}
-
-fieldset button {
-  font-size: 1rem;
-  padding: 10px 15px;
-  margin: 0;
-  text-align: center;
-  color: #f2f4f3;
-  background-color: #826c94;
-  cursor: pointer;
-}
-
-fieldset button:hover {
-  color: #826c94;
-  background-color: #f2f4f3;
 }
 
 /* Where to find styling */
