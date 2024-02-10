@@ -27,13 +27,12 @@ h2 {
 .article-1 h3 {
   margin: 20px;
   font-size: 2rem;
-  /* color: #22333b; */
+  text-align: center;
 }
 
 .article-1 h4 {
   text-align: center;
   font-size: 1.3rem;
-  /* color: #22333b; */
 }
 
 .container-flex-a1 {
