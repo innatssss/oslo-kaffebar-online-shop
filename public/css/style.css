@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,6 +14,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+hr {
+  color: #826c94;
+}
+
 header {
   background-image: linear-gradient(to right, #826c94 30%, #ffab44);
   background-size: 100%;
@@ -19,10 +27,6 @@ header {
 header h1,
 p {
   text-align: center;
-}
-
-hr {
-  color: #826c94;
 }
 
 button.main-nav {
@@ -82,7 +86,7 @@ button {
 }
 
 .search button {
-  width: 48px;
+  width: 50px;
   margin-left: -5px;
   background: #edae4a;
 }
@@ -139,6 +143,9 @@ article .description {
 .events-header,
 .find-header {
   margin-left: 64px;
+  padding: 25px 0px 25px 0px;
+  text-align: left;
+  font-size: 2rem;
 }
 
 /* Coffe card styling */
@@ -199,6 +206,7 @@ article .description {
   cursor: pointer;
   box-shadow: 1px 3px 0px rgb(139, 113, 255);
   transition-duration: 0.7s;
+  font-size: large;
 }
 
 .card-coffee-list button:hover {
@@ -233,11 +241,6 @@ article .description {
 }
 
 /* Blog styling */
-.blog-header {
-  padding: 25px 0px 25px 0px;
-  text-align: left;
-  font-size: 2rem;
-}
 
 .article-1 h3 {
   margin: 30px;
