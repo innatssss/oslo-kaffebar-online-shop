@@ -3,6 +3,12 @@
   background-color: #f2f4f3;
 }
 
+a {
+  text-decoration: none;
+  color: #f2f4f3;
+  font-family: "Archivo Black", sans-serif;
+}
+
 /* Header styling */
 h1 {
   font-size: 2rem;
@@ -54,21 +60,84 @@ h2 {
   color: #22333b;
 }
 
-.container-main {
+.img-article-1 {
+  width: 30%;
+}
+
+.flex-container-nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+  background-color: #826c94;
+  min-height: 60%;
+  width: 100%;
+}
+
+.flex-elem-nav {
+  max-width: 180px;
+  max-height: 150px;
+  background-color: #917DA1;
+  margin: 20px;
+  padding: 30px 20px 30px 5px;
+  border-left: 2px solid #f2f4f3;
+}
+
+/* Color flex-element on hover */
+.flex-elem-nav:hover {
+  background-color: #22333b;
+  text-decoration: none;
+  cursor: pointer;
+  transition-duration: 0.7s;
+  box-shadow: 0px 9px 30px 0px rgba(191, 163, 215, 1);
+}
+
+.flex-container-main {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  width: 100%;
   color: #22333b;
 }
 
-.container-main h5 {
-  margin-left: 20px;
-  padding: 10px 0px;
-  font-size: 1.5rem;
+.box-align-start {
+  align-self: flex-start;
 }
 
-.container-main p {
+.box-align-end {
+  align-self: flex-end;
+}
+
+.flex-item {
+  width: 50vw;
+  height: min-content;
+  padding: 40px 20px 50px 40px;
+  margin: 30px 0px;
+  background-color: #917DA1;
+  border-radius: 10px;
+}
+
+.flex-item h5 {
   margin-left: 20px;
-  padding: 10px 0px;
-  text-align: start;
+  padding: 40px 0px;
+  font-size: 1.5rem;
+  color: #22333b;
+  text-align: center;
+}
+
+.flex-item p {
   font-size: 1.2rem;
+  text-align: start;
+  text-indent: 15px;
+}
+
+.flex-item:hover {
+  cursor: pointer;
+  transition-duration: 0.7s;
+  box-shadow: 0px 9px 30px 0px rgba(191, 163, 215, 1);
+}
+
+.flex-end {
+  align-self: flex-end;
 }
 
 .article-1-list li {

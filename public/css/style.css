@@ -147,7 +147,6 @@ article .description {
 
 /* Styling all h2 */
 .goods-header,
-.blog-header,
 .events-header,
 .find-header {
   margin-left: 64px;
@@ -249,7 +248,7 @@ article .description {
 .sub-header h4 {
   color: #22333b;
   font-size: 32px;
-} 
+}
 
 .sub-header p {
   color: #22333b;
@@ -300,6 +299,12 @@ article .description {
 }
 
 /* Blog styling */
+#blog h3 {
+  width: 100vw;
+  text-align: center;
+  padding-top: 50px;
+  font-family: "Archivo Black", sans-serif;
+}
 
 .link-a1 a:link {
   text-decoration: none;
@@ -342,7 +347,7 @@ article .description {
 }
 
 .img-article-1 {
-  width: 40%;
+  width: 30vw;
   height: auto;
   margin-inline-end: 32px;
   margin-bottom: 16px;
