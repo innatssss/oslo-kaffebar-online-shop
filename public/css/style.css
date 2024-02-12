@@ -354,17 +354,36 @@ article .description {
 }
 
 /* Where to find styling */
-.find-header {
-  padding: 25px 0px 25px 0px;
-  text-align: left;
-  font-size: 2rem;
-}
 
 /* Footer styling */
 footer {
   background-image: linear-gradient(to right, #826c94 30%, #ffab44);
   background-size: 100%;
-  background-repeat: repeat;
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: -10px;
+}
+
+.flex-footer p {
+  text-transform: uppercase;
+}
+
+.footer-link a {
+  text-decoration: none;
+  color: #f2f4f3;
+  font-family: "Archivo Black", sans-serif;
+  cursor: pointer;
+}
+.footer-link a:hover {
+  color: #edae4a;
+}
+
+.last-footer {
   text-align: center;
-  font-size: 1rem;
+  width: 100vw;
 }
