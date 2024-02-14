@@ -39,13 +39,12 @@
   </head>
   <body>
     <header>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#concept-description">Oslo Kaffebar</a></li>
-          <li><a href="../public/pages/coffee-menu.html">Coffee good(s)</a></li>
-          <li><a href="../public/pages/events.html">Events</a></li>
-          <li><a href="../public/pages/location.html">Where to find us</a></li>
-          <div class="search">
+      <nav class="main-nav disp-flex">
+          <div><a href="#concept-description">Oslo Kaffebar</a></div>
+          <div><a href="../public/pages/coffee-menu.html">Coffee good(s)</a></div>
+          <div><a href="../public/pages/events.html">Events</a></div>
+          <div><a href="../public/pages/location.html">Where to find us</a><div>
+          <div class="search disp-flex">
             <form action="search">
               <input
                 type="text"
@@ -59,7 +58,6 @@
               <i class="fa-solid fa-magnifying-glass fa-xl"></i>
             </button>
           </div>
-        </ul>
       </nav>
       <h1>Oslo Kaffebar</h1>
       <p class="pre-header">Berlin based roastery</p>
@@ -96,40 +94,42 @@
       <section id="coffee-goods">
         <h2 class="goods-header">Coffee Good(s)</h2>
         <div class="card-coffee-list">
-          <div class="coffe-card">
-            <div class="p-image">
-              <img src="./assets/images/coffee-bag.png" alt="coffe bag pic" />
+          <div class="coffee-card-container">
+            <div class="coffe-card">
+              <div class="p-image">
+                <img src="./assets/images/coffee-bag.png" alt="coffe bag pic" />
+              </div>
+              <div class="p-info">
+                <h4><a href="">Pery&Brazil</a></h4>
+                <p>Espresso</p>
+                <button class="main-button">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
             </div>
-            <div class="p-info">
-              <h4><a href="">Pery&Brazil</a></h4>
-              <p>Espresso</p>
-              <button class="main-button">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </button>
+            <div class="coffe-card">
+              <div class="p-image">
+                <img src="./assets/images/coffee-bag.png" alt="coffe bag pic" />
+              </div>
+              <div class="p-info">
+                <h4><a href="">Ethiopia</a></h4>
+                <p>Filter</p>
+                <button class="main-button">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
             </div>
-          </div>
-          <div class="coffe-card">
-            <div class="p-image">
-              <img src="./assets/images/coffee-bag.png" alt="coffe bag pic" />
-            </div>
-            <div class="p-info">
-              <h4><a href="">Ethiopia</a></h4>
-              <p>Filter</p>
-              <button class="main-button">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </button>
-            </div>
-          </div>
-          <div class="coffe-card">
-            <div class="p-image">
-              <img src="./assets/images/coffee-bag.png" alt="coffe bag pic" />
-            </div>
-            <div class="p-info">
-              <h4><a href="">Peru</a></h4>
-              <p>Espresso</p>
-              <button class="main-button">
-                <i class="fa-solid fa-cart-shopping"></i>
-              </button>
+            <div class="coffe-card">
+              <div class="p-image">
+                <img src="./assets/images/coffee-bag.png" alt="coffe bag pic" />
+              </div>
+              <div class="p-info">
+                <h4><a href="">Peru</a></h4>
+                <p>Espresso</p>
+                <button class="main-button">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
             </div>
           </div>
         </div>

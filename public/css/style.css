@@ -48,12 +48,11 @@ input:focus {
 }
 
 /* Mainu nav styling */
-.main-nav li,
-div {
-  color: #f2f4f3;
-  display: inline-block;
-  margin-top: 32px;
-  margin-left: 16px;
+
+.disp-flex {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: row wrap;
 }
 
 .main-nav a {
@@ -61,7 +60,8 @@ div {
   text-decoration: none;
   font-size: 1.2rem;
   font-family: "Archivo Black", sans-serif;
-  color: inherit;
+  color: #f2f4f3;
+
 }
 
 /* Change the color of links on hover */
@@ -71,16 +71,17 @@ div {
 }
 
 /* Search form */
-.search form,
+/* .search form,
 button {
   display: inline;
   cursor: pointer;
-}
+} */
 
 .search {
-  float: right;
+  /* float: right; */
+/*   
   margin-right: 32px;
-  margin-top: 16px;
+  margin-top: 16px; */
 }
 
 .search input,
@@ -90,7 +91,7 @@ button {
 }
 
 .search input {
-  width: 200px;
+  /* width: 200px; */
 }
 
 .search button {
@@ -156,13 +157,15 @@ article .description {
 }
 
 /* Coffe card styling */
-
+.coffee-card-container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px 20px;
+}
 .coffe-card {
-  width: 30%;
   background-color: #f2f4f3;
   border-radius: 30px;
-  display: inline-block;
-  margin: 10px 8px;
+  flex-basis: 30%;
 }
 
 .coffe-card:hover {
@@ -182,6 +185,10 @@ article .description {
 }
 
 /* Coffee name and links to pages */
+.p-info h4 {
+  font-size: 1.5rem;
+}
+
 .p-info a {
   color: #826c94;
 }
@@ -201,7 +208,7 @@ article .description {
 }
 
 .p-info button {
-  width: 180px;
+  width: 150px;
   height: 40px;
   border: none;
   background-color: #22333b;
@@ -213,7 +220,7 @@ article .description {
   cursor: pointer;
   box-shadow: 1px 3px 0px rgb(139, 113, 255);
   transition-duration: 0.7s;
-  font-size: large;
+  font-size: 1.5rem;
 }
 
 .coffee-nav {
