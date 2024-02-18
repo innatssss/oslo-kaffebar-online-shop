@@ -1,5 +1,5 @@
 /* header styling */
-h1 {
+.header__title {
   font-size: 2rem;
 }
 
@@ -8,14 +8,13 @@ h1 {
 }
 
 /* main stylin */
-.main-policy h2 {
+.main-policy__title {
   padding: 30px;
   text-align: center;
   font-size: 32px;
 }
 
-.main-policy h2,
-h4 {
+.text-uppercase {
   text-transform: uppercase;
 }
 
@@ -23,13 +22,13 @@ h4 {
   margin: 0px 260px 50px 260px;
 }
 
-.main-policy h3 {
+.main-policy__title-second {
   padding-bottom: 25px;
   text-align: left;
   font-size: 28px;
 }
 
-.main-policy h4 {
+.main-policy__title-h4 {
   padding-top: 25px;
   padding-bottom: 20px;
 }
@@ -39,7 +38,7 @@ h4 {
   text-align: left;
 }
 
-.main-policy li {
+.main-policy__list-item {
   padding-bottom: 10px;
   list-style: inside;
 }

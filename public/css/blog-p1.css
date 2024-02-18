@@ -10,7 +10,7 @@ a {
 }
 
 /* Header styling */
-h1 {
+.header__title {
   font-size: 2rem;
 }
 
@@ -18,7 +18,7 @@ h1 {
   padding-bottom: 100px;
 }
 
-h2 {
+.blog__title {
   padding-bottom: 50px;
   text-align: center;
   font-size: 2.5rem;
@@ -30,29 +30,30 @@ h2 {
   margin: 0px 76px 0px 64px;
 }
 
-.article-1 h3 {
+.article-1__title {
   margin: 20px;
   font-size: 2rem;
   text-align: center;
 }
 
-.article-1 h4 {
+.article-1__second-title {
   text-align: center;
   font-size: 1.3rem;
 }
 
 .container-flex-a1 {
   margin-top: 40px;
+  margin-bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.container-main p {
+.flex-container__main p {
   text-indent: 5%;
 }
 
-.container-left p {
+.container-flex__left p {
   margin-inline: 32px;
   text-align: start;
   line-height: 50px;
@@ -60,11 +61,11 @@ h2 {
   color: #22333b;
 }
 
-.img-article-1 {
+.container-flex__right-img {
   width: 30%;
 }
 
-.flex-container-nav {
+.flex-container__nav {
   display: flex;
   justify-content: space-evenly;
   flex-flow: row wrap;
@@ -73,17 +74,17 @@ h2 {
   width: 100%;
 }
 
-.flex-elem-nav {
+.flex-container__element {
   max-width: 180px;
   max-height: 150px;
-  background-color: #917DA1;
+  background-color: #917da1;
   margin: 20px;
   padding: 30px 20px 30px 5px;
   border-left: 2px solid #f2f4f3;
 }
 
 /* Color flex-element on hover */
-.flex-elem-nav:hover {
+.flex-container__element:hover {
   background-color: #22333b;
   text-decoration: none;
   cursor: pointer;
@@ -91,7 +92,7 @@ h2 {
   box-shadow: 0px 9px 30px 0px rgba(191, 163, 215, 1);
 }
 
-.flex-container-main {
+.flex-container__main {
   display: flex;
   align-items: start;
   flex-direction: column;
@@ -112,7 +113,7 @@ h2 {
   height: min-content;
   padding: 40px 20px 50px 40px;
   margin: 30px 0px;
-  background-color: #917DA1;
+  background-color: #917da1;
   border-radius: 10px;
 }
 
@@ -140,20 +141,20 @@ h2 {
   align-self: flex-end;
 }
 
-.article-1-list li {
+.article-1-list__item {
   margin: 10px 40px;
   list-style: inside;
   line-height: 25px;
 }
 
-.article-1-question {
+.article-1__question {
   width: 100%;
   text-align: center;
   color: #22333b;
   font-weight: 700;
 }
 
-iframe.video-article-1 {
+.article-1__video {
   width: 560px;
   height: 315px;
   margin: auto;

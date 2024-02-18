@@ -21,18 +21,33 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
-    <header>
+  <body class="bg-light">
+    <header id="page-header" class="gradient-background">
       <nav class="main-nav f-box-center">
         <ul class="nav-bar f-box-center">
-          <li><a href="../index.html">Oslo Kaffebar</a></li>
-          <li><a href="../public/pages/coffee-menu.html">Coffee good(s)</a></li>
-          <li><a href="../public/pages/events.html">Events</a></li>
-          <li><a href="../public/pages/location.html">Where to find us</a></li>
+          <li class="nav-bar__item">
+            <a class="nav-bar__link" href="../index.html">Oslo Kaffebar</a>
+          </li>
+          <li class="nav-bar__item">
+            <a class="nav-bar__link" href="../public/pages/coffee-menu.html"
+              >Coffee good(s)</a
+            >
+          </li>
+          <li class="nav-bar__item">
+            <a class="nav-bar__link" href="../public/pages/events.html"
+              >Events</a
+            >
+          </li>
+          <li class="nav-bar__item">
+            <a class="nav-bar__link" href="../public/pages/location.html"
+              >Where to find us</a
+            >
+          </li>
         </ul>
         <div class="search">
-          <form action="search">
+          <form class="search__form" action="search">
             <input
+              class="search__input input-focus"
               type="text"
               maxlength="60"
               name="main-search"
@@ -40,24 +55,28 @@
               required
             />
           </form>
-          <button type="submit">
-            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+          <button class="search__button" type="submit">
+            <i class="search__svg fa-solid fa-magnifying-glass fa-xl"></i>
           </button>
         </div>
       </nav>
-      <h1>Oslo Kaffebar</h1>
-      <p class="pre-header">Berlin based roastery</p>
+      <h1 class="header__title text-center">Oslo Kaffebar</h1>
+      <p class="pre-header text-center">Berlin based roastery</p>
     </header>
     <main>
       <article class="main-policy">
-        <h2>Privacy policy</h2>
-        <h3>Oslo Kaffebar Roastery Privacy Policy</h3>
+        <h2 class="main-policy__title">Privacy policy</h2>
+        <h3 class="main-policy__title-second">
+          Oslo Kaffebar Roastery Privacy Policy
+        </h3>
         <p>
           This Privacy Policy describes how your personal information is
           collected, used, and shared when you visit or make a purchase from
           www.oslokaffebar.com (the “Site”).
         </p>
-        <h4>perconal information we collect</h4>
+        <h4 class="main-policy__title-h4 text-uppercase">
+          perconal information we collect
+        </h4>
         <p>
           When you visit the Site, we automatically collect certain information
           about your device, including information about your web browser, IP
@@ -69,19 +88,19 @@
           automatically-collected information as “Device Information.”
         </p>
         <p>We collect Device Information using the following technologies:</p>
-        <ul>
-          <li>
+        <ul class="main-policy__list">
+          <li class="main-policy__list-item">
             “Cookies” are data files that are placed on your device or computer
             and often include an anonymous unique identifier. For more
             information about cookies, and how to disable cookies, visit
             http://www.allaboutcookies.org.
           </li>
-          <li>
+          <li class="main-policy__list-item">
             “Log files” track actions occurring on the Site, and collect data
             including your IP address, browser type, Internet service provider,
             referring/exit pages, and date/time stamps.
           </li>
-          <li>
+          <li class="main-policy__list-item">
             “Web beacons,” “tags,” and “pixels” are electronic files used to
             record information about how you browse the Site.
           </li>
@@ -96,7 +115,9 @@
           When we talk about “Personal Information” in this Privacy Policy, we
           are talking both about Device Information and Order Information.
         </p>
-        <h4>How do we use your personal information?</h4>
+        <h4 class="main-policy__title-h4 text-uppercase">
+          How do we use your personal information?
+        </h4>
         <p>
           We use the Order Information that we collect generally to fulfill any
           orders placed through the Site (including processing your payment
@@ -117,7 +138,9 @@
           analytics about how our customers browse and interact with the Site,
           and to assess the success of our marketing and advertising campaigns).
         </p>
-        <h4>Sharing your personal information</h4>
+        <h4 class="main-policy__title-h4 text-uppercase">
+          Sharing your personal information
+        </h4>
         <p>
           We share your Personal Information with third parties to help us use
           your Personal Information, as described above. For example, we use
@@ -162,12 +185,12 @@
           the Digital Advertising Alliance’s opt-out portal at:
           http://optout.aboutads.info/.
         </p>
-        <h4>Do not track</h4>
+        <h4 class="main-policy__title-h4 text-uppercase">Do not track</h4>
         <p>
           Please note that we do not alter our Site’s data collection and use
           practices when we see a Do Not Track signal from your browser.
         </p>
-        <h4>Your rights</h4>
+        <h4 class="main-policy__title-h4 text-uppercase">Your rights</h4>
         <p>
           If you are a European resident, you have the right to access personal
           information we hold about you and to ask that your personal
@@ -185,19 +208,19 @@
           companies who are compliant with the European General Data Protection
           Regulation.
         </p>
-        <h4>Data retention</h4>
+        <h4 class="main-policy__title-h4 text-uppercase">Data retention</h4>
         <p>
           When you place an order through the Site, we will maintain your Order
           Information for our records unless and until you ask us to delete this
           information.
         </p>
-        <h4>Changes</h4>
+        <h4 class="main-policy__title-h4 text-uppercase">Changes</h4>
         <p>
           We may update this privacy policy from time to time in order to
           reflect, for example, changes to our practices or for other
           operational, legal, or regulatory reasons.
         </p>
-        <h4>Conrtact us</h4>
+        <h4 class="main-policy__title-h4 text-uppercase">Conrtact us</h4>
         <p>
           The data controller of Oslo Kaffebar GmbH is Co-Managing Director
           Kriser Schsffk.
@@ -215,16 +238,30 @@
       </article>
     </main>
   </body>
-  <footer>
-    <div class="footer-link">
-      <div class="flex-footer">
-        <p><a href="../pages/imprint.html">imprint</a></p>
-        <p><a href="../pages/privacy-pol.html">privacy policy</a></p>
-        <p><a href="../pages/refund-pol.html">refund policy</a></p>
+  <footer id="page-footer" class="page-footer gradient-background">
+    <div class="page-footer__policy">
+      <div class="page-footer__flex-container">
+        <p class="page-footer__flex-item">
+          <a class="page-footer__link" href="../pages/imprint.html">imprint</a>
+        </p>
+        <p class="page-footer__flex-item">
+          <a class="page-footer__link" href="../pages/privacy-pol.html"
+            >privacy policy</a
+          >
+        </p>
+        <p class="page-footer__flex-item">
+          <a class="page-footer__link" href="../pages/refund-pol.html"
+            >refund policy</a
+          >
+        </p>
       </div>
-      <div class="last-footer">
+      <div class="page-footer__copyright">
         <p>All rights reserved 2024</p>
-        <small><a href="../index.html">OSLO KAFFEBAR</a></small>
+        <small
+          ><a class="link-decoration" href="../index.html"
+            >OSLO KAFFEBAR</a
+          ></small
+        >
       </div>
     </div>
   </footer>

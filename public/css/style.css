@@ -2,20 +2,19 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap");
 
-* {
+body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-body {
   color: #22333b;
   background-color: #f2f4f3;
   font-family: "Open Sans", sans-serif;
 }
 
-hr {
-  color: #826c94;
+.border-hr {
+  border: 1px solid #826c94;
+  opacity: 1;
+  margin: 0;
 }
 
 /* Styling all main buttons on hover */
@@ -26,18 +25,17 @@ hr {
   box-shadow: 1px 3px 0px rgb(139, 113, 255);
 }
 
-header {
+.gradient-background {
   background-image: linear-gradient(to right, #826c94 30%, #ffab44);
   background-size: 100%;
   background-repeat: repeat;
 }
 
-header h1,
-p {
+.text-center {
   text-align: center;
 }
 
-input:focus {
+.input-focus:hover {
   background: #22333b;
   color: #f2f4f3;
 }
@@ -61,11 +59,11 @@ input:focus {
   gap: 20px;
 }
 
-.nav-bar li {
+.nav-bar__item {
   list-style: none;
 }
 
-.nav-bar a {
+.nav-bar__link {
   padding: 10px;
   text-decoration: none;
   font-size: 1.2rem;
@@ -74,7 +72,7 @@ input:focus {
 }
 
 /* Change the color of links on hover */
-.nav-bar a:hover {
+.nav-bar__link:hover {
   background-color: #f2f4f3;
   color: #22333b;
 }
@@ -86,27 +84,27 @@ input:focus {
   cursor: pointer;
 }
 
-.search input,
-button {
+.search__input,
+.search__button {
   height: 42px;
   border: 1.5px solid #826c94;
 }
 
-.search input {
+.search__input {
   width: 200px;
 }
 
-.search button {
+.search__button {
   width: 50px;
   margin-left: -5px;
   background: #edae4a;
 }
 
-.search button:hover {
+.search__button:hover {
   background-color: #826c94;
 }
 
-h1 {
+.header__title {
   margin-top: 200px;
   font-family: "Archivo Black", sans-serif;
   font-size: 6rem;
@@ -117,6 +115,7 @@ h1 {
 .pre-header {
   padding-bottom: 180px;
   color: #22333b;
+  margin-bottom: 0;
 }
 
 section {
@@ -269,13 +268,15 @@ article .description {
   padding: 15px;
 }
 
-#subscribe div {
+.sub-header {
   display: block;
 }
 
 .form-control {
   position: relative;
   margin: 30px 0 20px;
+  padding: 0;
+  background-clip: content-box;
 }
 
 .form-control input {
@@ -368,12 +369,12 @@ article .description {
 /* Where to find styling */
 
 /* Footer styling */
-footer {
+#page_footer {
   background-image: linear-gradient(to right, #826c94 30%, #ffab44);
   background-size: 100%;
 }
 
-.flex-footer {
+.page-footer__flex-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -381,21 +382,26 @@ footer {
   margin-top: -10px;
 }
 
-.flex-footer p {
+.page-footer__flex-item {
   text-transform: uppercase;
 }
 
-.footer-link a {
+.page-footer__link {
   text-decoration: none;
   color: #f2f4f3;
   font-family: "Archivo Black", sans-serif;
   cursor: pointer;
 }
-.footer-link a:hover {
+.page-footer__link:hover {
   color: #edae4a;
 }
 
-.last-footer {
+.page-footer__copyright {
   text-align: center;
   width: 100vw;
+}
+
+.link-decoration {
+  color: #22333b;
+  text-decoration: none;
 }

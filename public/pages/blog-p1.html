@@ -21,18 +21,33 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
-    <header>
+  <body class="bg-light">
+    <header id="page-header" class="gradient-background">
       <nav class="main-nav f-box-center">
         <ul class="nav-bar f-box-center">
-          <li><a href="../index.html">Oslo Kaffebar</a></li>
-          <li><a href="../public/pages/coffee-menu.html">Coffee good(s)</a></li>
-          <li><a href="../public/pages/events.html">Events</a></li>
-          <li><a href="../public/pages/location.html">Where to find us</a></li>
+          <li class="nav-bar__item">
+            <a class="nav-bar__link" href="../index.html">Oslo Kaffebar</a>
+          </li>
+          <li class="nav-bar__item">
+            <a class="nav-bar__link" href="../public/pages/coffee-menu.html"
+              >Coffee good(s)</a
+            >
+          </li>
+          <li class="nav-bar__item">
+            <a class="nav-bar__link" href="../public/pages/events.html"
+              >Events</a
+            >
+          </li>
+          <li class="nav-bar__item">
+            <a class="nav-bar__link" href="../public/pages/location.html"
+              >Where to find us</a
+            >
+          </li>
         </ul>
         <div class="search">
-          <form action="search">
+          <form class="search__form" action="search">
             <input
+              class="search__input input-focus"
               type="text"
               maxlength="60"
               name="main-search"
@@ -40,24 +55,26 @@
               required
             />
           </form>
-          <button type="submit">
-            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+          <button class="search__button" type="submit">
+            <i class="search__svg fa-solid fa-magnifying-glass fa-xl"></i>
           </button>
         </div>
       </nav>
-      <h1>Oslo Kaffebar</h1>
-      <p class="pre-header">Berlin based roastery</p>
-      <h2>Blog</h2>
+      <h1 class="header__title text-center">Oslo Kaffebar</h1>
+      <p class="pre-header text-center">Berlin based roastery</p>
+      <h2 class="blog__title">Blog</h2>
     </header>
-    <main>
+    <main id="page-content" class="main">
       <article class="article-1">
-        <h3>Struggling with choosing which coffee to buy?</h3>
-        <h4>
+        <h3 class="article-1__title">
+          Struggling with choosing which coffee to buy?
+        </h3>
+        <h4 class="article-1__second-title">
           Tips for Choosing Coffee Beans: 7 Considerations to Help You Make the
           Best Selection
         </h4>
         <div class="container-flex-a1">
-          <div class="container-left">
+          <div class="container-flex__left">
             <p>
               Whether you’re a beginner or a seasoned coffee drinker, shopping
               for coffee can be a hassle. I’ve listed a few tips to help you get
@@ -67,36 +84,42 @@
           </div>
           <img
             src="../assets/images/img-article-1.JPG"
-            class="img-article-1"
+            class="container-flex__right-img"
             alt="coffee equipment view"
           />
         </div>
-        <div class="flex-container-nav">
-          <div class="flex-elem-nav">
-            <a href="#tip1">1. What’s Your Desired Taste Profile?</a>
+        <div class="flex-container__nav">
+          <div class="flex-container__element">
+            <a class="flex-container__link" href="#tip1"
+              >1. What’s Your Desired Taste Profile?</a
+            >
           </div>
-          <div class="flex-elem-nav">
-            <a href="#tip2">2. Growing Regions</a>
+          <div class="flex-container__element">
+            <a class="flex-container__link" href="#tip2">2. Growing Regions</a>
           </div>
-          <div class="flex-elem-nav">
-            <a href="#tip3">3. Growing Altitude</a>
+          <div class="flex-container__element">
+            <a class="flex-container__link" href="#tip3">3. Growing Altitude</a>
           </div>
-          <div class="flex-elem-nav">
-            <a href="#tip4">4. Processing Method</a>
+          <div class="flex-container__element">
+            <a class="flex-container__link" href="#tip4"
+              >4. Processing Method</a
+            >
           </div>
-          <div class="flex-elem-nav">
-            <a href="#tip5">5. Caffeine Content</a>
+          <div class="flex-container__element">
+            <a class="flex-container__link" href="#tip5">5. Caffeine Content</a>
           </div>
-          <div class="flex-elem-nav">
-            <a href="#tip6">6. What’s Your Preferred Brewing Method?</a>
+          <div class="flex-container__element">
+            <a class="flex-container__link" href="#tip6"
+              >6. What’s Your Preferred Brewing Method?</a
+            >
           </div>
-          <div class="flex-elem-nav">
-            <a href="#tip7"
+          <div class="flex-container__element">
+            <a class="flex-container__link" href="#tip7"
               >7. Sustainable Coffee Farming and Fair Trade Initiatives</a
             >
           </div>
         </div>
-        <div class="flex-container-main">
+        <div class="flex-container__main">
           <div id="tip1" class="flex-item box-align-start">
             <h5>What’s Your Desired Taste Profile?</h5>
             <p>
@@ -148,15 +171,15 @@
               elevation has a big impact on a coffee’s flavor profile.
             </p>
             <ul class="article-1-list">
-              <li>
+              <li class="article-1-list__item">
                 <b>Low-altitude coffee</b> (1250 masl) tends to be earthy with a
                 heavier body and refined acidity.
               </li>
-              <li>
+              <li class="article-1-list__item">
                 <b>Medium-altitude coffee</b> (1250 – 1500 masl) has a little
                 more acidity and sweetness with a more luscious mouthfeel.
               </li>
-              <li>
+              <li class="article-1-list__item">
                 <b>High-altitude coffee</b> (grown at 1500 – 2200 masl) is more
                 aromatic and complex in flavor. It also has pronounced acidity
                 with sweet fruit flesh or wine grapes undertones.
@@ -268,13 +291,13 @@
             </p>
           </div>
         </div>
-        <div class="article-1-question">
+        <div class="article-1__question">
           <p>Wanna know more about how to choose a right coffee?</p>
           <p>Down here check some interesting video we found for you!</p>
         </div>
 
         <iframe
-          class="video-article-1"
+          class="article-1__video"
           src="https://www.youtube.com/embed/O9YnLFrM7Fs?si=5cez_t-hoZ0F1m6v"
           title="YouTube video player"
           frameborder="0"
@@ -284,16 +307,30 @@
         ></iframe>
       </article>
     </main>
-    <footer>
-      <div class="footer-link">
-        <div class="flex-footer">
-          <p><a href="../pages/imprint.html">imprint</a></p>
-          <p><a href="../pages/privacy-pol.html">privacy policy</a></p>
-          <p><a href="../pages/refund-pol.html">refund policy</a></p>
+    <footer id="page-footer" class="page-footer gradient-background">
+      <div class="page-footer__policy">
+        <div class="page-footer__flex-container">
+          <p class="page-footer__flex-item">
+            <a class="page-footer__link" href="../pages/imprint.html">imprint</a>
+          </p>
+          <p class="page-footer__flex-item">
+            <a class="page-footer__link" href="../pages/privacy-pol.html"
+              >privacy policy</a
+            >
+          </p>
+          <p class="page-footer__flex-item">
+            <a class="page-footer__link" href="../pages/refund-pol.html"
+              >refund policy</a
+            >
+          </p>
         </div>
-        <div class="last-footer">
+        <div class="page-footer__copyright">
           <p>All rights reserved 2024</p>
-          <small><a href="../index.html">OSLO KAFFEBAR</a></small>
+          <small
+            ><a class="link-decoration" href="../index.html"
+              >OSLO KAFFEBAR</a
+            ></small
+          >
         </div>
       </div>
     </footer>
