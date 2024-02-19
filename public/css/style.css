@@ -9,6 +9,7 @@ body {
   color: #22333b;
   background-color: #f2f4f3;
   font-family: "Open Sans", sans-serif;
+  width: 100vw;
 }
 
 .border-hr {
