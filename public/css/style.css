@@ -421,7 +421,7 @@ article .description {
   justify-content: center;
   align-items: center;
   gap: 40px;
-  margin-top: -10px;
+  padding-top: 20px;
 }
 
 .page-footer__flex-item {
