@@ -72,6 +72,8 @@ a {
   background-color: #826c94;
   min-height: 60%;
   width: 100%;
+  position: sticky;
+  top: 0;
 }
 
 .flex-container__element {

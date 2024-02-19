@@ -44,7 +44,7 @@
   </head>
   <body class="bg-light">
     <header id="page-header" class="gradient-background">
-      <nav class="main-nav f-box-center">
+      <nav class="main-nav f-box-center stiky-nav">
         <ul class="nav-bar f-box-center">
           <li class="nav-bar__item">
             <a class="nav-bar__link" href="#concept-description"
@@ -209,8 +209,42 @@
       </section>
       <section id="location">
         <hr class="border-hr" />
-        <h2 class="find-header">Where to find us</h2>
+        <h2 class="location-header">Our location</h2>
         <hr class="border-hr" />
+        <div class="container-location f-box-center">
+          <div class="container__left-text w-25">
+            <div class="container__adress text-center d-flex flex-column">
+              <h4>Mitte</h4>
+              <p>Eichendorffstrasse 13</p>
+              <p>10115 Berlin</p>
+            </div>
+            <hr class="border-hr" />
+            <div class="container__open-hours text-center d-flex flex-column">
+              <p><strong>Mon-Fri</strong></p>
+              <p>8am - 6pm</p>
+              <p><strong>Sat-Sun</strong></p>
+              <p>9am - 6pm</p>
+              <br />
+              <p><em>Opening hours may vary on public holidays.</em></p>
+            </div>
+            <div class="container__button text-center d-flex flex-column">
+              <button class="location-btn main-button col-6 mx-auto">
+                <a
+                  class="location-btn__link text-uppercase"
+                  href="https://www.google.com/maps/dir//Eichendorffstraße+13,+10115+Berlin/@52.5309608,13.304352,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47a851ec3719886f:0x90e70c53cc4e0306!2m2!1d13.3867522!2d52.5309894?entry=ttu"
+                  >direction</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="container__right-img w-75">
+            <img
+              src="../public/assets/images/location-view.png"
+              class="location-view"
+              alt="street view"
+            />
+          </div>
+        </div>
       </section>
     </main>
     <footer id="page-footer" class="page-footer gradient-background">
@@ -253,6 +287,18 @@
           </button>
         </div>
       </nav>
+      <div class="back-to-top">
+        <a href="./index.html">
+          <button
+            type="button"
+            class="btn btn-danger btn-floating btn-lg"
+            id="btn-back-to-top"
+          >
+            Back to top
+            <i class="fas fa-arrow-up"></i>
+          </button>
+        </a>
+      </div>
       <div class="page-footer__policy">
         <div class="page-footer__flex-container">
           <p class="page-footer__flex-item">

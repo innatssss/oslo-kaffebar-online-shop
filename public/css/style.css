@@ -35,22 +35,24 @@ body {
   text-align: center;
 }
 
-.input-focus:hover {
-  background: #22333b;
-  color: #f2f4f3;
-}
-
 /* Mainu nav styling */
 .f-box-center {
   display: flex;
   align-items: center;
 }
 
+.stiky-nav {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, #826c94 30%, #ffab44);
+}
+
 .main-nav {
   justify-content: space-between;
   flex-flow: row wrap;
-  max-width: 100vw;
-  padding: 20px 20px 0px 30px;
+  padding: 15px 10px 0px 30px;
 }
 
 .nav-bar {
@@ -105,7 +107,7 @@ body {
 }
 
 .header__title {
-  margin-top: 200px;
+  padding-top: 220px;
   font-family: "Archivo Black", sans-serif;
   font-size: 6rem;
   margin-bottom: 0;
@@ -150,7 +152,7 @@ article .description {
 /* Styling all h2 */
 .goods-header,
 .events-header,
-.find-header {
+.location-header {
   margin-left: 64px;
   padding: 25px 0px 25px 0px;
   text-align: left;
@@ -236,7 +238,7 @@ article .description {
   cursor: pointer;
 }
 
-.coffee-nav a {
+.main-button {
   color: #22333b;
   background-color: #f2f4f3;
   font-weight: 600;
@@ -273,10 +275,8 @@ article .description {
 }
 
 .form-control {
-  position: relative;
   margin: 30px 0 20px;
   padding: 0;
-  background-clip: content-box;
 }
 
 .form-control input {
@@ -289,6 +289,11 @@ article .description {
   width: 60%;
 }
 
+.input-focus:hover {
+  background: #22333b;
+  color: #f2f4f3;
+}
+
 .form-control button {
   background-color: #22333b;
   border: 0;
@@ -297,7 +302,6 @@ article .description {
   font-size: 14px;
   height: 42px;
   padding: 12px 24px;
-  position: sticky;
   top: 0;
   right: 0;
 }
@@ -367,6 +371,44 @@ article .description {
 }
 
 /* Where to find styling */
+.container__open-hours {
+  padding-top: 20px;
+}
+
+.location-btn__link {
+  text-decoration: none;
+  color: #22333b;
+  cursor: pointer;
+  letter-spacing: 5px;
+}
+
+.container__right-img {
+  margin: 0;
+}
+
+.location-view {
+  width: 75vw;
+  height: 80vh;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+/* Back to top button styling */
+.btn {
+  opacity: 80%;
+  background-color: gray;
+  border: 1px solid #f2f4f3;
+}
+
+.btn:hover {
+  opacity: 80%;
+  background-color: #826c94;
+  border: 1px solid #f2f4f3;
+}
 
 /* Footer styling */
 #page_footer {
