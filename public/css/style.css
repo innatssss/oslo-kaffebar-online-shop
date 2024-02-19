@@ -134,7 +134,7 @@ article .description-header {
   text-align: center;
   font-size: 40px;
   color: #f2f4f3;
-  padding-bottom: 16px;
+  padding: 16px 0px;
 }
 
 article .description {
@@ -160,6 +160,10 @@ article .description {
 }
 
 /* Coffe card styling */
+
+.goods-header {
+  margin-bottom: 32px;
+}
 .coffee-card-container {
   display: flex;
   flex-flow: row wrap;
@@ -173,11 +177,13 @@ article .description {
   flex-basis: 30%;
   min-width: 240px;
   margin-left: 32px;
+  transition: 250ms;
 }
 
 .coffe-card:hover {
   box-shadow: 0px 9px 30px 0px rgba(191, 163, 215, 1);
   transition-duration: 0.7s;
+  transform: scale(1.1);
 }
 
 .p-image img {
@@ -188,7 +194,7 @@ article .description {
 }
 
 .card-coffee-list .p-info {
-  margin: 0px 0px 8px 40px;
+  margin: 20px 0px 8px 40px;
   line-height: 26px;
 }
 
@@ -236,6 +242,8 @@ article .description {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  margin-top: 30px;
+
 }
 
 .main-button {
