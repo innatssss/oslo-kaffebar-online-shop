@@ -1,0 +1,160 @@
+.bg-purple {
+  background: #826c94;
+}
+
+.flex__profile-container {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.container__profile-left,
+.container__profile-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__profile-right {
+  width: 40vw;
+  text-align: center;
+  padding: 0;
+  position: fixed;
+  top: 150px;
+  right: 30px;
+}
+
+.container__profile-left {
+  width: 59vw;
+  margin-top: 100px;
+}
+
+.form-container {
+  background-color: #c5b6d1;
+  margin-left: 32px;
+  padding: 40px;
+  border-radius: 20px;
+  width: 50vw;
+}
+
+.container__header-left {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+}
+
+.container__text-left {
+  margin: 26px;
+  color: #f2f4f3;
+}
+
+/* Stylinf flex input boxes*/
+.row-1 {
+  gap: 30px;
+}
+
+.form-container__item {
+  flex: 50%;
+}
+
+/* Input fields */
+.input-container[type="text"],
+.input-container[type="password"],
+.input-container[type="tel"],
+.input-container[type="email"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.input-container:hover {
+  background: #22333b;
+  color: #f2f4f3;
+}
+
+.radio {
+  margin-top: 20px;
+}
+
+.gander-radio {
+  margin: 20px 0px;
+}
+
+.input-radio {
+  margin-left: 8px;
+  margin-right: 16px;
+}
+
+input[type=radio] {
+  border: 0px;
+  width: 2em;
+  height: 2em;
+  vertical-align: middle;
+}
+
+/* custom styling of check-box */
+.lable-check {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin: 15px 0px;
+  font-size: 1rem;
+}
+
+.lable-check:before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  background-color: #22333b;
+  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.3),
+    0px 1px 0px 0px rgba(255, 255, 255, 0.8);
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.lable-check:before {
+  border-radius: 3px;
+}
+
+input[type="checkbox"]:checked + .lable-check:before {
+  content: "\2713";
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #edae4a;
+  text-align: center;
+  line-height: 12px;
+}
+
+.create-prof-btn:hover {
+  background: #edae4a;
+}
+
+/* SVG background image with https://haikei.app/ */
+.spacer {
+  aspect-ratio: 1000/200;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer__bottom {
+  background-image: url("../assets/svg/layered-waves-haikei-2.svg");
+}
+
+/* .flip {
+  transform: rotate(180deg);
+} */

@@ -9,6 +9,11 @@ a {
   font-family: "Archivo Black", sans-serif;
 }
 
+.position-stiky {
+  position: sticky;
+  top: 0;
+}
+
 /* Header styling */
 .header__title {
   font-size: 2rem;
