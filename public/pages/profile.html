@@ -68,8 +68,8 @@
             <i class="search__svg fa-solid fa-magnifying-glass fa-xl"></i>
           </button>
           <p class="nav-bar__item sign-up__link">
-            <a class="nav-bar__link" href="./profile.html">Sign up</a>
-          </p>˚
+            <a class="nav-bar__link" href="../pages/login.html">Log In</a>
+          </p>
         </div>
       </nav>
     </header>
@@ -79,7 +79,8 @@
           <h2 class="container__header-left">Welcome to our community</h2>
           <h3 class="container__under-left">Create a profile</h3>
           <p class="container__text-left">
-            Already have an account? <a class="link-light" href="">Log in.</a>
+            Already have an account?
+            <a class="link-light" href="../pages/login.html">Log in.</a>
           </p>
           <form
             class="form-container"
@@ -146,13 +147,15 @@
               </div>
               <div class="form-container__item d-flex flex-column">
                 <label class="lable-title" for="country">Country </label>
-                <input
-                  class="input-container"
-                  type="text"
-                  name="country"
-                  id="country"
-                  placeholder="Country"
-                />
+                <div class="svg-inside">
+                  <input
+                    class="input-container"
+                    type="text"
+                    name="country"
+                    id="country"
+                    placeholder="Country"
+                  />
+                </div>
               </div>
               <div class="form-container__item d-flex flex-column">
                 <label class="lable-title" for="zip-code">ZIP Code </label>
