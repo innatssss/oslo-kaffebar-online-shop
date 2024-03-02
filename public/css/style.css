@@ -272,6 +272,7 @@ article .description {
   position: absolute;
   right: 40px;
 }
+
 /* Subscription form styling */
 
 #subscribe {
@@ -338,6 +339,7 @@ article .description {
 .svg-cup i:hover {
   color: #edae4a;
   transition-duration: 0.7s;
+  transform: rotate(720deg);
 }
 
 /* Blog styling */
