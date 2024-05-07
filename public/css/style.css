@@ -408,14 +408,11 @@ article .description {
   letter-spacing: 5px;
 }
 
-.container__right-img {
-  margin: 0;
-}
-
-.location-view {
-  width: 75vw;
-  height: 80vh;
-}
+#map {
+  height: 450px;
+  width: 65vw;
+  margin-left: 40px;
+} 
 
 .back-to-top {
   position: fixed;
